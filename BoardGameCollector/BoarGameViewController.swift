@@ -50,13 +50,24 @@ class BoarGameViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func addTapped(_ sender: AnyObject) {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let boardGame = BoardGame(context: context)
-        boardGame.title = titleTextField.text
-        boardGame.image = UIImagePNGRepresentation(boardGameImageView.image!) as NSData?
+         if boardGame != nil {
+            boardGame!.title = titleTextField.text
+            boardGame!.image = UIImagePNGRepresentation(boardGameImageView.image!) as NSData?
+         } else {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let boardGame = BoardGame(context: context)
+            boardGame.title = titleTextField.text
+            boardGame.image = UIImagePNGRepresentation(boardGameImageView.image!) as NSData?
+        }
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
+        navigationController!.popViewController(animated: true)
+    }
+    
+    @IBAction func deleteTapped(_ sender: AnyObject) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.delete(boardGame!)
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         navigationController!.popViewController(animated: true)
     }
 }

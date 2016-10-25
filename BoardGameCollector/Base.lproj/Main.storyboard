@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BjW-dX-Ik0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BjW-dX-Ik0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="SfF-yu-B1g">
                         <barButtonItem key="rightBarButtonItem" tag="2" systemItem="add" id="LTk-Y7-JIv">
                             <connections>
-                                <segue destination="5b1-mb-1Cf" kind="show" id="Wtq-01-Ntu"/>
+                                <segue destination="5b1-mb-1Cf" kind="show" identifier="boardGameSegue" id="Wtq-01-Ntu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,16 +75,24 @@
                                     <action selector="addTapped:" destination="5b1-mb-1Cf" eventType="touchUpInside" id="STL-Hg-SYe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlT-Qn-rhh">
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="5b1-mb-1Cf" eventType="touchUpInside" id="qas-Ff-9MD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2gO-vW-nZu" firstAttribute="width" secondItem="Lv0-EZ-WRZ" secondAttribute="width" id="IfS-wg-VQS"/>
                             <constraint firstItem="2gO-vW-nZu" firstAttribute="top" secondItem="Lv0-EZ-WRZ" secondAttribute="bottom" constant="25" id="Jk0-vj-i0f"/>
+                            <constraint firstItem="DlT-Qn-rhh" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="NN1-1g-GkM"/>
                             <constraint firstItem="Lv0-EZ-WRZ" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="aEy-yH-bxt"/>
                             <constraint firstItem="2gO-vW-nZu" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="cwM-Yg-L0q"/>
                             <constraint firstItem="6Cw-0K-JKU" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="cyO-AD-iHO"/>
                             <constraint firstItem="6Cw-0K-JKU" firstAttribute="top" secondItem="2gO-vW-nZu" secondAttribute="bottom" constant="25" id="ht7-CU-HFI"/>
                             <constraint firstItem="Lv0-EZ-WRZ" firstAttribute="top" secondItem="Kko-Tq-5Vz" secondAttribute="bottom" constant="25" id="kfY-Rp-F0l"/>
+                            <constraint firstItem="DlT-Qn-rhh" firstAttribute="top" secondItem="6Cw-0K-JKU" secondAttribute="bottom" constant="20" id="nEf-pf-Iji"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V7f-7h-BEd">
@@ -102,7 +110,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="6Cw-0K-JKU" id="cJy-f2-DC7"/>
                         <outlet property="boardGameImageView" destination="Lv0-EZ-WRZ" id="TUW-9R-Eje"/>
+                        <outlet property="deleteButton" destination="DlT-Qn-rhh" id="Waz-yq-0Ni"/>
                         <outlet property="titleTextField" destination="2gO-vW-nZu" id="QNV-he-RjZ"/>
                     </connections>
                 </viewController>

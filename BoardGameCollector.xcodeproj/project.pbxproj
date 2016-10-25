@@ -13,6 +13,8 @@
 		177175E81DBAB5D9000520EC /* BoardGameCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 177175E61DBAB5D9000520EC /* BoardGameCollector.xcdatamodeld */; };
 		177175EA1DBAB5D9000520EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177175E91DBAB5D9000520EC /* Assets.xcassets */; };
 		177175ED1DBAB5D9000520EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177175EB1DBAB5D9000520EC /* LaunchScreen.storyboard */; };
+		177175F51DBAC807000520EC /* YoureAMakerHarry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 177175F41DBAC807000520EC /* YoureAMakerHarry.jpg */; };
+		177175F71DBAC92C000520EC /* BoarGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177175F61DBAC92C000520EC /* BoarGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		177175E91DBAB5D9000520EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177175EC1DBAB5D9000520EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177175EE1DBAB5D9000520EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177175F41DBAC807000520EC /* YoureAMakerHarry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YoureAMakerHarry.jpg; sourceTree = "<group>"; };
+		177175F61DBAC92C000520EC /* BoarGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoarGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				177175DF1DBAB5D9000520EC /* AppDelegate.swift */,
 				177175E11DBAB5D9000520EC /* ViewController.swift */,
 				177175E31DBAB5D9000520EC /* Main.storyboard */,
+				177175F61DBAC92C000520EC /* BoarGameViewController.swift */,
+				177175F41DBAC807000520EC /* YoureAMakerHarry.jpg */,
 				177175E91DBAB5D9000520EC /* Assets.xcassets */,
 				177175EB1DBAB5D9000520EC /* LaunchScreen.storyboard */,
 				177175EE1DBAB5D9000520EC /* Info.plist */,
@@ -128,6 +134,7 @@
 			files = (
 				177175ED1DBAB5D9000520EC /* LaunchScreen.storyboard in Resources */,
 				177175EA1DBAB5D9000520EC /* Assets.xcassets in Resources */,
+				177175F51DBAC807000520EC /* YoureAMakerHarry.jpg in Resources */,
 				177175E51DBAB5D9000520EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177175F71DBAC92C000520EC /* BoarGameViewController.swift in Sources */,
 				177175E21DBAB5D9000520EC /* ViewController.swift in Sources */,
 				177175E01DBAB5D9000520EC /* AppDelegate.swift in Sources */,
 				177175E81DBAB5D9000520EC /* BoardGameCollector.xcdatamodeld in Sources */,

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BjW-dX-Ik0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BjW-dX-Ik0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5bg-dz-RiM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -59,23 +63,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YoureAMakerHarry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lv0-EZ-WRZ">
+                                <rect key="frame" x="62.5" y="79" width="250" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Nbo-Xo-Lp8"/>
                                     <constraint firstAttribute="width" constant="250" id="YAp-T9-beM"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Game Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gO-vW-nZu">
+                                <rect key="frame" x="62.5" y="244" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cw-0K-JKU">
+                                <rect key="frame" x="172.5" y="289" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addTapped:" destination="5b1-mb-1Cf" eventType="touchUpInside" id="STL-Hg-SYe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlT-Qn-rhh">
+                                <rect key="frame" x="165" y="334" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="addTapped:" destination="5b1-mb-1Cf" eventType="touchUpInside" id="qas-Ff-9MD"/>
@@ -86,14 +94,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2gO-vW-nZu" firstAttribute="width" secondItem="Lv0-EZ-WRZ" secondAttribute="width" id="IfS-wg-VQS"/>
-                            <constraint firstItem="2gO-vW-nZu" firstAttribute="top" secondItem="Lv0-EZ-WRZ" secondAttribute="bottom" constant="25" id="Jk0-vj-i0f"/>
+                            <constraint firstItem="2gO-vW-nZu" firstAttribute="top" secondItem="Lv0-EZ-WRZ" secondAttribute="bottom" constant="15" id="Jk0-vj-i0f"/>
                             <constraint firstItem="DlT-Qn-rhh" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="NN1-1g-GkM"/>
+                            <constraint firstItem="2gO-vW-nZu" firstAttribute="top" secondItem="Lv0-EZ-WRZ" secondAttribute="bottom" constant="15" id="W5g-6a-vqK"/>
                             <constraint firstItem="Lv0-EZ-WRZ" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="aEy-yH-bxt"/>
                             <constraint firstItem="2gO-vW-nZu" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="cwM-Yg-L0q"/>
                             <constraint firstItem="6Cw-0K-JKU" firstAttribute="centerX" secondItem="Pvz-F2-vG0" secondAttribute="centerX" id="cyO-AD-iHO"/>
-                            <constraint firstItem="6Cw-0K-JKU" firstAttribute="top" secondItem="2gO-vW-nZu" secondAttribute="bottom" constant="25" id="ht7-CU-HFI"/>
-                            <constraint firstItem="Lv0-EZ-WRZ" firstAttribute="top" secondItem="Kko-Tq-5Vz" secondAttribute="bottom" constant="25" id="kfY-Rp-F0l"/>
-                            <constraint firstItem="DlT-Qn-rhh" firstAttribute="top" secondItem="6Cw-0K-JKU" secondAttribute="bottom" constant="20" id="nEf-pf-Iji"/>
+                            <constraint firstItem="6Cw-0K-JKU" firstAttribute="top" secondItem="2gO-vW-nZu" secondAttribute="bottom" constant="15" id="ht7-CU-HFI"/>
+                            <constraint firstItem="Lv0-EZ-WRZ" firstAttribute="top" secondItem="Kko-Tq-5Vz" secondAttribute="bottom" constant="15" id="kfY-Rp-F0l"/>
+                            <constraint firstItem="DlT-Qn-rhh" firstAttribute="top" secondItem="6Cw-0K-JKU" secondAttribute="bottom" constant="15" id="nEf-pf-Iji"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V7f-7h-BEd">
